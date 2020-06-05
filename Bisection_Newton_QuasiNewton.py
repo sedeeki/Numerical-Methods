@@ -1,7 +1,4 @@
-#
-# name:
-# email: 
-#
+
 
 import numpy as np
 import math  
@@ -11,8 +8,7 @@ def bisection(f, x1, x2, tol=1e-14, itmax=200, SHOW=False):
     """ find a solution of f(x)=0 on the interval [x1,x2] by the bisection method. 
         return the results in a tuple (x, k, f(x)), 
                 where x is the root, k is the number of iterations.
-        (your code should not exceed itmax iterations. if SHOW is passed as True, then
-         your code should print out intermediate results)
+      
     """  
     if SHOW:  print("\n-------- bisection ------------")
 
@@ -35,8 +31,7 @@ def bisection(f, x1, x2, tol=1e-14, itmax=200, SHOW=False):
  
 def newton(f, fderivative, x, tol=1e-14, itmax=100, SHOW=False):   
     """ Newton's method, starting from an initial estimate x of the root,  
-        (your code should not exceed itmax iterations.if SHOW is passed as True, then
-         your code should print out intermediate results)
+       
     """
     if SHOW:  print("\n-------- Newton's method ------------")   
     for i in range(itmax): 
@@ -51,8 +46,7 @@ def quasi_newton(f, x, h=1e-4, tol=1.0e-14, FD='CFD', itmax=120, SHOW=False):
         The derivative is automatically computed via numerical differentiation,
         it defaults to using central finite difference scheme.
         The default for the grid length used for FD is h=1e-4.
-        (your code should not exceed itmax iterations. if SHOW is passed as True, then
-         your code should print out intermediate results)
+       
     """
     if SHOW:  print("\n-------- Quasi Newton's method,  FD scheme ={} ------------".format(FD))        
     fder = 1
@@ -78,12 +72,7 @@ def quasi_newton(f, x, h=1e-4, tol=1.0e-14, FD='CFD', itmax=120, SHOW=False):
     return x, i, f(x) 
 
 def solver_tests():
-    '''test your code on the equations listed in project pdf, remember to pass SHOW=True to your code
-       to print out results at each iteration.
-       for this problem, do not introduce any new variables below.
-       you only need to fill the lines that have '=' but with empty right-hand-side (using proper
-       function names above and the variables that have been assigned)
-    '''
+  
 
     #f1(x) =  x^9 - 8x^6 + 5x + 10 
     #define this function using variable name f1 (try to use lambda function for all problems here)
