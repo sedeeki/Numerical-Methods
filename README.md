@@ -2,7 +2,7 @@
 Some Math Theorem Codes with Test Cases
 
 
-Adaptive_Trapezoid contains trapezoid rule with test cases 
+Adaptive_Trapezoid contains trapezoid rule with test cases for Simpson Rule
 Bisection file constains Bisection Method, Newton Method, Quasi Newton Method
 Simpson file containts Simpson Rule 1/3, 3/8, 1/48
 
